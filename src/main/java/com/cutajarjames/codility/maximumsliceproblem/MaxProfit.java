@@ -1,4 +1,10 @@
-package com.cutajarjames.codility.MaximumSliceProblem;
+package com.cutajarjames.codility.maximumsliceproblem;
+
+/**
+ * This is the solution for Maximum Slice Problem > Max Profit
+ * <p>
+ * This is marked as PAINLESS difficulty
+ */
 
 public class MaxProfit {
     public int solution(int[] A) {
