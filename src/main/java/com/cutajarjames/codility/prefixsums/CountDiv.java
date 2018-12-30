@@ -3,7 +3,7 @@ package com.cutajarjames.codility.prefixsums;
 /**
  * This is the solution for Prefix Sums > Count Div
  * <p>
- * This is marked as PAINLESS difficulty
+ * This is marked as Respectable difficulty
  */
 
 
