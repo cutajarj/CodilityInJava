@@ -1,7 +1,7 @@
 package com.cutajarjames.codility.timecomplexity;
 
 /**
- * This is the solution for Time Complexity > MaxCounters
+ * This is the solution for Time Complexity > TapeEquilibrium
  * <p>
  * This is marked as PAINLESS difficulty
  */
