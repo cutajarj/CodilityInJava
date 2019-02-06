@@ -9,8 +9,8 @@ package com.cutajarjames.codility.prefixsums;
 
 public class CountDiv {
     public int solution(int A, int B, int K) {
-        double nStart = Math.ceil((double) A / (double) K);
-        double nEnd = Math.floor((double) B / (double) K);
+        double nStart = Math.ceil(A / (double) K);
+        double nEnd = Math.floor(B / (double) K);
         return (int) (nEnd - nStart + 1);
     }
 
