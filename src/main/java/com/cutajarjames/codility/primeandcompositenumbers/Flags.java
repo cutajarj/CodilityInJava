@@ -1,5 +1,11 @@
 package com.cutajarjames.codility.primeandcompositenumbers;
 
+/**
+ * This is the solution for Primes And Composite > Flags
+ * <p>
+ * This is marked as Respectable difficulty
+ */
+
 public class Flags {
     public int solution(int[] A) {
         int nextPeak = A.length;
