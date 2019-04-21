@@ -1,6 +1,6 @@
 package com.cutajarjames.codility.primeandcompositenumbers;
 
-public class Flags {
+public class FlagsFaster {
     public int solution(int[] A) {
         int nextPeak = A.length;
         int[] peaks = new int[A.length];
@@ -12,14 +12,17 @@ public class Flags {
         }
         peaks[0] = nextPeak;
 
-        int current_guess = 0;
-        int next_guess = 0;
-        while (canPlaceFlags(peaks, next_guess)) {
-            current_guess = next_guess;
-            next_guess += 1;
+        int upper_guess = (int)Math.sqrt(A.length) + 2;
+        int lower_guess = 0;
+        while (lower_guess < upper_guess - 1) {
+            int current_guess = (lower_guess + upper_guess) / 2;
+            if (canPlaceFlags(peaks, current_guess))
+                lower_guess = current_guess;
+            else
+                upper_guess = current_guess;
         }
 
-        return current_guess;
+        return lower_guess;
     }
 
     private boolean canPlaceFlags(int[] peaks, int flagsToPlace) {
