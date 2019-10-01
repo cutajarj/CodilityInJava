@@ -11,8 +11,8 @@ public class CountDistinctSlices {
         for (int tail = 0; tail < A.length; tail++) {
             while (head < A.length && !inCurrentSlice[A[head]]) {
                 inCurrentSlice[A[head]] = true;
+                totalSlices += (head - tail) + 1;
                 head += 1;
-                totalSlices += (head - tail);
                 if (totalSlices > 1000000000)
                     totalSlices = 1000000000;
             }
@@ -22,6 +22,7 @@ public class CountDistinctSlices {
     }
 
     public static void main(String[] args) {
+        System.out.println(new CountDistinctSlices().solution(8, new int[]{2, 7, 4, 6, 3}));
         System.out.println(new CountDistinctSlices().solution(6, new int[]{3, 4, 5, 5, 2}));
         System.out.println(new CountDistinctSlices().solution(6, new int[]{3, 5, 4, 5, 2}));
         System.out.println(new CountDistinctSlices().solution(6, new int[]{5, 3, 4, 2, 5}));
