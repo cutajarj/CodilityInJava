@@ -1,5 +1,10 @@
 package com.cutajarjames.codility.greedy;
 
+/**
+ * This is the solution for Greedy > TieRope
+ *
+ * This is marked as PAINLESS difficulty
+ */
 public class TieRopes {
     public int solution(int K, int[] A) {
         int count = 0;
