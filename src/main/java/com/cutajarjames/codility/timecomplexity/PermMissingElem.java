@@ -1,5 +1,10 @@
 package com.cutajarjames.codility.timecomplexity;
 
+/**
+ * This is the solution for Time Complexity > PermMissingElem
+ * <p>
+ * This is marked as PAINLESS difficulty
+ */
 public class PermMissingElem {
     public int solution(int[] A) {
         long maxNumber = A.length + 1;
