@@ -17,5 +17,7 @@ public class PermMissingElem {
 
     public static void main(String[] args) {
         System.out.println(new PermMissingElem().solution(new int[]{2, 3, 1, 5}));
+        System.out.println(new PermMissingElem().solution(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}));
+        System.out.println(new PermMissingElem().solution(new int[]{}));
     }
 }
