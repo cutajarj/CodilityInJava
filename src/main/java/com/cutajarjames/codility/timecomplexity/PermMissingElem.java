@@ -7,13 +7,13 @@ package com.cutajarjames.codility.timecomplexity;
  */
 public class PermMissingElem {
     public int solution(int[] A) {
-        long actual_sum = 0;
-        for (int number : A) {
-            actual_sum += number;
+        long actualSum = 0;
+        for (int number: A) {
+            actualSum += number;
         }
         long maxNumber = A.length + 1;
-        long expected_sum = (maxNumber * (maxNumber + 1) / 2);
-        return (int) (expected_sum - actual_sum);
+        long expectedSum = (maxNumber * (maxNumber + 1) / 2);
+        return (int) (expectedSum - actualSum);
     }
 
     public static void main(String[] args) {
