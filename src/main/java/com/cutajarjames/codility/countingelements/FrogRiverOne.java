@@ -1,5 +1,10 @@
 package com.cutajarjames.codility.countingelements;
 
+/**
+ * This is the solution for CountingElements > FrogRiverOne
+ * <p>
+ * This is marked as PAINLESS difficulty
+ */
 public class FrogRiverOne {
     public int solution(int X, int[] A) {
         boolean[] riverPositions = new boolean[X + 1];
