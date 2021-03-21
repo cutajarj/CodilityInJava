@@ -1,5 +1,11 @@
 package com.cutajarjames.codility.leader;
 
+/**
+ * This is the solution for Leader > Dominator
+ *
+ * This is marked as PAINLESS difficulty
+ */
+
 public class Dominator {
     public int solution(int[] A) {
         int consecutiveSize = 0;

@@ -2,6 +2,12 @@ package com.cutajarjames.codility.caterpillarmethod;
 
 import java.util.Arrays;
 
+/**
+ * This is the solution for Caterpillar method > CountDistinctSlices
+ *
+ * This is marked as PAINLESS difficulty
+ */
+
 public class CountDistinctSlices {
     public int solution(int M, int[] A) {
         int totalSlices = 0;
